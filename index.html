@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You Tube</title>
+    <title>YouTube Clone</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
+    <!-- header of yt -->
     <div class="header">
-        <div class="header-left">
-             <i class="material-icons">menu</i>
-             <img src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc" alt="youtube">
+        <div class="header_left">
+            <i class="material-icons">menu</i>
+            <img src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc" alt="youtube_image">
         </div>
-        <div class="header-search">
+
+        <div class="header_search">
             <form action="">
                 <input type="text" placeholder="Search">
                 <button><i class="material-icons">search</i></button>
             </form>
         </div>
-        <div class="header-icons">
+
+        <div class="header_icons">
             <i class="material-icons">search</i>
             <i class="material-icons">videocam</i>
             <i class="material-icons">apps</i>
@@ -27,8 +29,11 @@
             <i class="material-icons">account_circle</i>
         </div>
     </div>
+    <!-- header ends -->
 
+    <!-- Main section is starting from here -->
     <div class="main">
+        <!-- Side section is starting from here -->
         <div class="sidebar">
             <div class="sidebar_categories">
                 <div class="sidebar_category">
@@ -36,8 +41,8 @@
                     <span>Home</span>
                 </div>
                 <div class="sidebar_category">
-                    <i class="material-icons">play_arrow</i>
-                    <span>Shorts</span>
+                    <i class="material-icons">local_fire_department</i>
+                    <span>Trending</span>
                 </div>
                 <div class="sidebar_category">
                     <i class="material-icons">subscriptions</i>
@@ -45,6 +50,7 @@
                 </div>
             </div>
             <hr>
+
             <div class="sidebar_categories">
                 <div class="sidebar_category">
                     <i class="material-icons">library_add_check</i>
@@ -55,277 +61,282 @@
                     <span>History</span>
                 </div>
                 <div class="sidebar_category">
-                    <i class="material-icons">local_fire_department</i>
-                    <span>Trending</span>
+                    <i class="material-icons">play_arrow</i>
+                    <span>Your Videos</span>
                 </div>
                 <div class="sidebar_category">
                     <i class="material-icons">watch_later</i>
                     <span>Watch Later</span>
                 </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Liked Videos</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- videos part  -->
+        <div class="videos">
+            <h1>Recommened</h1>
+            <div class="videos_conatiner">
+                <!-- single video is tarting form here -->
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://static-cse.canva.com/blob/1564545/1600w-wK95f3XNRaM.jpg" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, molestias.
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsb1G0IoKZcWHESxBXNCxSc2fvGt9yqtHESA&s" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPdhpoX9ZhLgVkM6VvMzgIFmRAISU01AeXUnCleLh6LZpCEr6tvPQSmex43QUkvwqI7Cs&usqp=CAU" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/304295000/original/a99c84d58be98b09610ea453563fe80d8f812cca/design-eye-catching-thumbnails-that-boost-views-and-subscribers.png" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbgkWXS6rouL5LclYMHNdNNOys1D2ZMwwmyA&s" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/195239498/original/22182d9b443c36fc41d4f36e3798632007ff4c64/design-amazing-youtube-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSxaHc5M6EFIJ6S3ONRi_tG3-mDjlUFdZL6Q&s" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/148598600/original/7a1585428eff25d8a350957690168d152657062c/design-eye-catchy-youtube-thumbnail-in-24-hrs.jpg" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLJbQ3QPnJC9HPOuwjKE45L22OgiCjQ1ltlQ&s" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlf-lXUkRADSmU9Xz-S54DFTqDIXUITTTSEQ&s" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxjebHaoFsIbd1LnuYoXguPs6A130jb_Rh-A&s" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8EiOX82FDGATg6DnYrKmG079ywrHNXLO09Q&s" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://marketplace.canva.com/EAFAMirCsX4/2/0/1600w/canva-purple-creative-livestream-youtube-thumbnail-X2eVuOzURSM.jpg" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://cdn.pixabay.com/photo/2022/09/08/04/04/thumbnail-7439988_1280.png" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://play-lh.googleusercontent.com/h4MGdWhmz14TPxSTvktNM2iegA1JM_jomw5hTJKrHU4qwBCqU9dpmOYIDnld1NfPdg=w526-h296-rw" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">FutureCoders</a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="videos">
-        <h1>Recommened</h1>
-        <div class="videos_conatiner">
-            <!-- single video is tarting form here -->
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="video_thumbnail">
-                    <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="">
-                </div>
-                <div class="video_details">
-                    <div class="author">
-                        <img src="http://aninex.com/images/srvc/web_de_icon.png" alt="">
-                    </div>
-                    <div class="title">
-                        <h3>
-                            Top % programming languages to learn in 2021 | Best Programminglanguage to learn
-                        </h3>
-                        <a href="">FutureCoders</a>
-                        <span>10M Views * 3 Months ago</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+</body></html>
